@@ -6,4 +6,6 @@ public class MagicSquare {
 	 * in the square. Write a method that takes a 2D Array as input and checks if it is a magic
 	 * square or not.
 	 * */
+
+	// NOTE: implementation missing
 }

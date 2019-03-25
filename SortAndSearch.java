@@ -20,12 +20,14 @@ public class SortAndSearch {
 
 	      for(int i = 0; i < a.length; i++) {
 	         System.out.print(a[i] + " ");
-	      }
+			}
+			
+			// NOTE: there is no call to binSrch
 	   }
 	
 	
 		public  static void bubbleSort(int[] a) {
-		      int n = a.length;
+		      int n = a.length;	// NOTE: indentation is a little bit off from here
 		      int temp = 0;
 
 		      for(int i = 0; i < n; i++) {
@@ -39,8 +41,8 @@ public class SortAndSearch {
 		      }
 		   }
 		
-           public static int binSrch(int arr[], int a, int b, int c){ 
-	    
+           public static int binSrch(int arr[], int a, int b, int c){	// NOTE: the implementation is correct, but a little bit more speaking names would be nice
+				
 	        if (b>=a) 
 	        { 
 	            int middle = a + (b - a)/2; 

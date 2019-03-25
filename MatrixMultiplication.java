@@ -1,6 +1,6 @@
 
 public class MatrixMultiplication {
-	static int N=4;
+	static int N=4; // NOTE: variables start with a lower letter - so should be n instead of N
 	
 	//Todo: Each 2D Array can be treated like a matrix.
 	//Write a method which takes two matrices as input and returns the result.
@@ -20,8 +20,8 @@ public class MatrixMultiplication {
                          {4, 4, 10, 55}}; 
   
         // To store result 
-        int result[][] = new int[N][N] ; 
-        int i, j; 
+        int result[][] = new int[N][N] ;    // NOTE: your implementation is limited to NxN matrices
+        int i, j;                           //       but it should also work for e.g. 2x3 * 3x1
         matrixMulti(matrix1, matrix2, result); 
       
         System.out.println("Result matrix"
@@ -33,10 +33,10 @@ public class MatrixMultiplication {
                                     + " "); 
             System.out.println(); 
         } 
-    } 
+    }   // NOTE: indentation is a little bit off from here
 
 	        
-		      public static void matrixMulti(int[][] matrix1, int[][] matrix2, int[][] result)
+		      public static void matrixMulti(int[][] matrix1, int[][] matrix2, int[][] result)  // NOTE: it would be a better design to return the result instead of passing it to a parameter
 		      {
 		    	  	      
 		      for (int i = 0; i < N; i++) {
